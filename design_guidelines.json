@@ -1,0 +1,262 @@
+{
+  "project_name": "DocuAssist",
+  "theme": "Dark",
+  "archetype": "Archetype 5 (Jewel & Luxury)",
+  "vibe": "Premium, trustworthy, high-end legal utility, authoritative, clean",
+  "colors": {
+    "background": {
+      "primary": "#141419",
+      "secondary": "#1E1E24",
+      "elevated": "#26262F"
+    },
+    "text": {
+      "primary": "#F0F0F5",
+      "secondary": "#9E9EAA",
+      "disabled": "#555561",
+      "inverse": "#111111"
+    },
+    "accent": {
+      "primary": "#C5A880",
+      "primary_hover": "#DCC29E",
+      "secondary": "#4A3B69",
+      "secondary_light": "#5D4B85"
+    },
+    "border": {
+      "default": "#2C2C35",
+      "active": "#C5A880",
+      "subtle": "#1E1E24"
+    },
+    "document_preview": {
+      "background": "#FAFAFA",
+      "text": "#111111",
+      "border": "#E5E5E5"
+    },
+    "status": {
+      "success": "#3A6E53",
+      "error": "#9E4747",
+      "warning": "#B8860B"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Cormorant Garamond",
+      "body": "Manrope",
+      "document": "Times New Roman"
+    },
+    "sizes": {
+      "h1": { "fontSize": "32px", "lineHeight": "38px", "letterSpacing": "-0.02em" },
+      "h2": { "fontSize": "24px", "lineHeight": "30px", "letterSpacing": "-0.01em" },
+      "h3": { "fontSize": "20px", "lineHeight": "26px", "letterSpacing": "0" },
+      "body": { "fontSize": "16px", "lineHeight": "24px", "letterSpacing": "0" },
+      "small": { "fontSize": "14px", "lineHeight": "20px", "letterSpacing": "0" },
+      "caption": { "fontSize": "12px", "lineHeight": "16px", "letterSpacing": "0.02em", "textTransform": "uppercase" }
+    }
+  },
+  "spacing_and_layout": {
+    "container_padding": "24px",
+    "card_padding": "20px",
+    "item_spacing": "16px",
+    "section_spacing": "32px",
+    "border_radius": {
+      "card": "12px",
+      "button": "8px",
+      "input": "8px",
+      "modal": "16px"
+    },
+    "shadows": {
+      "soft": "0 4px 20px rgba(0, 0, 0, 0.4)",
+      "elevated": "0 8px 30px rgba(0, 0, 0, 0.6)"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": {
+        "backgroundColor": "#C5A880",
+        "color": "#141419",
+        "borderRadius": "8px",
+        "padding": "16px 24px",
+        "fontWeight": "700"
+      },
+      "secondary": {
+        "backgroundColor": "#1E1E24",
+        "color": "#F0F0F5",
+        "border": "1px solid #2C2C35",
+        "borderRadius": "8px",
+        "padding": "16px 24px"
+      },
+      "ghost": {
+        "backgroundColor": "transparent",
+        "color": "#C5A880",
+        "padding": "12px 16px"
+      }
+    },
+    "cards": {
+      "default": {
+        "backgroundColor": "#1E1E24",
+        "borderRadius": "12px",
+        "border": "1px solid #2C2C35",
+        "padding": "20px"
+      },
+      "interactive": {
+        "backgroundColor": "#1E1E24",
+        "borderRadius": "12px",
+        "border": "1px solid #2C2C35",
+        "padding": "20px",
+        "activeBorder": "1px solid #C5A880"
+      }
+    },
+    "inputs": {
+      "default": {
+        "backgroundColor": "#141419",
+        "borderBottom": "1px solid #2C2C35",
+        "color": "#F0F0F5",
+        "padding": "12px 0px",
+        "fontSize": "16px"
+      },
+      "focused": {
+        "borderBottom": "1px solid #C5A880"
+      },
+      "helper_text": {
+        "color": "#9E9EAA",
+        "fontSize": "12px",
+        "marginTop": "4px"
+      }
+    }
+  },
+  "screens": {
+    "Home": {
+      "layout": "Vertical scroll",
+      "elements": [
+        {
+          "type": "Header",
+          "details": "Brand logo 'DocuAssist' (Cormorant Garamond, bold). Top right Settings icon."
+        },
+        {
+          "type": "Recent Documents Section",
+          "details": "Horizontal scroll or compact list of last 2 edited documents. Cards with subtle purple (#4A3B69) gradient or icon tint."
+        },
+        {
+          "type": "Document Categories Grid",
+          "details": "List or 2-column grid. 5 Cards: Credit Dispute Letter, Rental/Landlord Letter, Simple Agreement, Childcare Agreement, General Formal Letter. Each card has a Lucide icon (in #C5A880), title, and brief description."
+        }
+      ]
+    },
+    "Document Builder": {
+      "layout": "Wizard / Step-by-step",
+      "elements": [
+        {
+          "type": "Progress Indicator",
+          "details": "Thin progress bar fixed at the top, filled with #C5A880. Text: 'Step X of Y'."
+        },
+        {
+          "type": "Form Fields",
+          "details": "Fields specific to document type (Full Name, Address, Recipient Details). Dark inputs with bottom borders only, minimal UI. Helper text underneath."
+        },
+        {
+          "type": "Navigation",
+          "details": "Bottom sticky bar with 'Back' (Ghost button) and 'Next' (Primary #C5A880 button)."
+        }
+      ]
+    },
+    "Preview Screen": {
+      "layout": "Immersive Viewer",
+      "elements": [
+        {
+          "type": "Document Container",
+          "details": "A white container (#FAFAFA) with padding (p-6), simulating an A4 paper. Sits on the #141419 background with a dark shadow."
+        },
+        {
+          "type": "Document Content",
+          "details": "Text inside is #111111, using Times New Roman or Cormorant Garamond. Properly structured with Header (name/address), Subject, Body, Sign-off."
+        },
+        {
+          "type": "Actions",
+          "details": "Floating action bar or bottom sticky container with 'Export' or 'Edit' buttons."
+        }
+      ]
+    },
+    "Export Screen": {
+      "layout": "Modal / Bottom Sheet",
+      "elements": [
+        {
+          "type": "Success Message",
+          "details": "Icon (check-circle) and 'Document Ready' text."
+        },
+        {
+          "type": "Action Buttons",
+          "details": "3 prominent buttons: 'Copy to Clipboard', 'Share Document', 'Export as PDF'."
+        }
+      ]
+    },
+    "Saved Documents": {
+      "layout": "List View",
+      "elements": [
+        {
+          "type": "Search Bar",
+          "details": "Input at top to filter documents."
+        },
+        {
+          "type": "List Items",
+          "details": "Rows containing Document Title, Document Type, and Date. Right chevron icon to view."
+        },
+        {
+          "type": "Empty State",
+          "details": "If no docs: minimal document icon and 'No documents saved yet' text."
+        }
+      ]
+    },
+    "Settings": {
+      "layout": "List View",
+      "elements": [
+        {
+          "type": "Profile/Login",
+          "details": "Placeholders for Google/Facebook login buttons."
+        },
+        {
+          "type": "Preferences",
+          "details": "Theme toggle (if applicable, though dark is default), Clear Data option."
+        },
+        {
+          "type": "Legal Text",
+          "details": "Muted disclaimer text at the bottom: 'This app provides general document assistance and is not legal advice.'"
+        }
+      ]
+    }
+  },
+  "icons": {
+    "library": "lucide-react-native",
+    "stroke_width": 1.5,
+    "usage": {
+      "categories": ["FileText", "Home", "Briefcase", "User", "Shield"],
+      "actions": ["ChevronRight", "Share2", "Download", "Copy", "Settings", "Search"]
+    }
+  },
+  "media": {
+    "images": [
+      {
+        "category": "texture_background",
+        "url": "https://images.unsplash.com/photo-1770745559994-545619d3c3da?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBkYXJrJTIwdGV4dHVyZSUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzc2NDU5NjAxfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Abstract dark background with wisps of smoke (optional use for header or onboarding background)"
+      },
+      {
+        "category": "empty_state",
+        "url": "https://images.unsplash.com/photo-1663124178703-d2d6a333e6c2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxtaW5pbWFsJTIwZG9jdW1lbnQlMjBpY29uJTIwZW1wdHl8ZW58MHx8fHwxNzc2NDU5NjAxfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Minimal document icon empty state"
+      }
+    ]
+  },
+  "testing_attributes": {
+    "rule": "All interactive and key informational elements MUST include a data-testid attribute.",
+    "convention": "kebab-case, role-based (e.g., data-testid='start-builder-button')"
+  },
+  "instructions_to_main_agent": [
+    "Use deep charcoal (#141419) as the absolute background instead of pure black.",
+    "The primary accent is muted gold (#C5A880) to evoke trust, prestige, and a 'law firm' aesthetic.",
+    "Ensure the document preview screen uses a distinct white (#FAFAFA) paper-like container against the dark UI to mimic an actual physical document.",
+    "Typography must be strictly adhered to: Cormorant Garamond for main headings and document text to maintain a formal legal feel, Manrope for readable UI body text.",
+    "Avoid pill-shaped buttons; stick to rounded-lg (8px) or rounded-xl (12px) to maintain a structural, formal layout.",
+    "Place the disclaimer 'This app provides general document assistance and is not legal advice' clearly in the Settings screen or footer of the Export view.",
+    "Implement a step-by-step progress indicator in the Document Builder that clearly shows current progress.",
+    "Use lucide-react-native for all iconography."
+  ]
+}
